@@ -52,7 +52,18 @@ const port = process.env.PORT || 3016;
 
 // Stun and Turn iceServers
 let iceServers = [
-    
+    {
+        urls: "stun:stun2.l.google.com:19302"
+    },
+    {
+        urls: "stun:stun3.l.google.com:19302"
+    },
+    {
+        urls: "stun:stun4.l.google.com:19302"
+    },
+    {
+        urls: "stun:stun.l.google.com:19302"
+    }
 ];
 const stunServerUrl = process.env.STUN_SERVER_URL;
 const turnServerUrl = process.env.TURN_SERVER_URL;

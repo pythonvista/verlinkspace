@@ -51,7 +51,9 @@ const host = process.env.HOST || 'localhost';
 const port = process.env.PORT || 3016;
 
 // Stun and Turn iceServers
-let iceServers = [];
+let iceServers = [
+    
+];
 const stunServerUrl = process.env.STUN_SERVER_URL;
 const turnServerUrl = process.env.TURN_SERVER_URL;
 const turnServerUsername = process.env.TURN_SERVER_USERNAME;
